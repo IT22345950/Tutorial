@@ -1,11 +1,24 @@
-/*Exercise 4 - Functions
+/*Exercise 2 - Selection
 
-Implement the three functions minimum(), maximum() and multiply() below the main() function.
+Write a program to calculate the amount to be paid for a rented vehicle.
 
-Do not change the code given in the main() function when you are implementing your solution.*/
+•	Input the distance the van has travelled
+•	The first 30 km is at a rate of 50/= per km.
+•	The remaining distance is calculated at the rate of 40/= per km.
+
+
+e.g.
+
+Distance -> 20
+Amount = 20 x 50 = 1000
+
+
+Distance -> 50
+Amount = 30 x 50 + (50-30) x 40 = 2300*/
 
 #include <stdio.h>
-  int minimum(int no1, int no2);
+
+int minimum(int no1, int no2);
 int maximum(int no1, int no2);
 int multiply(int no1, int no2);
 
@@ -18,9 +31,9 @@ int main() {
    printf("%d ", minimum(no1, no2));
    printf("%d ", maximum(no1, no2));
    printf("%d ", multiply(no1, no2));
-  
    return 0;
 }
+
 int minimum(int no1, int no2){
   if(no1 > no2){
     return no2;
